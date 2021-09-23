@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+    int s;
+    cin >> s;
+ 
+    int h = s / 3600;
+    int hour = h % 24;
+    int min = (s - h * 3600) / 60;
+    int sec = s - h * 3600 - min * 60;
+ 
+    cout << hour << ":" << setw(2) << setfill('0') << min << ":" << setw(2) << setfill('0') << sec << endl;
+    return 0;
+}
