@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int k, n, p, l;
+    cin >> k;
+    cin >> n;
+    p = (n - 1) / k + 1;
+    l = (n - 1) % k + 1;
+ cout << p << " " << l << endl;
+}
